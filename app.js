@@ -61,7 +61,7 @@ function addingTodo(inputValue) {
 
 addButton.addEventListener("click", () => {
   toDoText = inputbox.value;
-  let contents = document.getElementsByClassName("content");
+
   addingTodo(toDoText);
   if (inputbox.value.length > 3) {
     inputbox.value = "";
@@ -75,6 +75,5 @@ inputbox.addEventListener("keypress", function (e) {
     if (inputbox.value.length > 3) {
       inputbox.value = "";
     }
-    // overline the todos
   }
 });
